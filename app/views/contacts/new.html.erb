@@ -1,0 +1,19 @@
+<div class="container well">
+  <h2 class="text-center">Contact Us</h2>
+  <%= form_for "/contacts" do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+    <%= f.label :customer_type %>
+    <%= f.select :customer_type, [['Pro Brewer',],['Homebrewer'],['Homebrew Shop']]%>
+    <%= f.label :phone_number %>
+    <%= f.text_field :phone_number %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= f.label :subject %>
+    <%= f.text_field :subject%>
+    <%= f.label :message %>
+    <%= f.text_field :message %>
+  <% end %>
+</div>
